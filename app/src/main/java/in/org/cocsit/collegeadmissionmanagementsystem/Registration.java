@@ -61,11 +61,9 @@ public class Registration extends AppCompatActivity {
 
         my10marks = findViewById(R.id.RegWin10thMarks);
         my12marks = findViewById(R.id.RegWin12thMarks);
-        myUGmarks = findViewById(R.id.RegWinUGmarks);
 
         my10passYear = findViewById(R.id.RegWin10thPassYear);
         my12passYear = findViewById(R.id.RegWin12thPassYear);
-        myUGpassYear = findViewById(R.id.RegWinUGpassYear);
 
         mBirthDay = findViewById(R.id.RegWinBirthDay);
         mBirthMonth = findViewById(R.id.RegWinBirthMonth);
@@ -110,7 +108,7 @@ public class Registration extends AppCompatActivity {
         acceptButton.setText("CONTINUE");
         cancelButton.setText("DISMISS");
 
-        textView.setText("College of Computer Science\n& Information Technology\n\nOnline Admission Management System\n\nThis App is made possible by the Android open source project and other open source software. Made with ❤ in COCSIT. Thanks for using this app.\n\nWarning: You will lose all the data you entered !\nAre sure you want to go back ?");
+        textView.setText("Warning: You will lose all the data you entered !\nAre sure you want to go back ?");
 
         acceptButton.setOnClickListener(view -> {
             onBackPressed();
@@ -142,7 +140,7 @@ public class Registration extends AppCompatActivity {
         acceptButton.setText("REGISTER");
         cancelButton.setText("DISMISS");
 
-        textView.setText("College of Computer Science\n& Information Technology\n\nOnline Admission Management System\n\nThis App is made possible by the Android open source project and other open source software. Made with ❤ in COCSIT. Thanks for using this app.\n\nWarning: By going ahead you will get registered !\nAre sure you want to register ?");
+        textView.setText("Warning: By going ahead you will get registered !\nAre sure you want to register ?");
 
         acceptButton.setOnClickListener(view -> {
             sendDataToSever();

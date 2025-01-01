@@ -27,7 +27,7 @@
         android:text="Registration Form"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -110,7 +110,7 @@
                 android:text="Enter Student's Full Name"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -147,7 +147,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Middle Name 🧔"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/RegWinLname"
@@ -158,7 +158,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Last Name 👨‍👩‍👧‍👦"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -175,7 +175,7 @@
                 android:text="Enter Student's Percentage"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout1" />
@@ -213,18 +213,8 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="12th 🖊"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/RegWinUGmarks"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/sf_pro_display_regular"
-                    android:hint="UG 🖋"
-                    android:textAlignment="center"
-                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -240,7 +230,7 @@
                 android:text="Enter Student's Passing Year"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout2" />
@@ -278,18 +268,8 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="12th 🖊"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/RegWinUGpassYear"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/sf_pro_display_regular"
-                    android:hint="UG 🖋"
-                    android:textAlignment="center"
-                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -305,7 +285,7 @@
                 android:text="Enter Student's Birth Date"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout3" />
@@ -332,7 +312,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Date 📆"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/RegWinBirthMonth"
@@ -354,7 +334,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Year 📅"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -370,7 +350,7 @@
                 android:text="Enter Student's Other Details"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout4" />
@@ -397,7 +377,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Blood Group 🩸"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/RegWinNationality"
@@ -408,7 +388,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Nationality 🌏"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/RegWinGender"
@@ -419,7 +399,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Gender ♐"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -435,7 +415,7 @@
                 android:text="Enter Student's Contact Details"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout5" />
@@ -462,7 +442,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Primary Mobile No. 📞"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/RegWinSecondaryPhone"
@@ -473,7 +453,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Secondary Mobile No. 📱"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -489,7 +469,7 @@
                 android:text="Enter Course Name"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout6" />
@@ -516,7 +496,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Enter Course Name Here 📚"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <TextView
@@ -531,7 +511,7 @@
                 android:text="Enter Student's Permanent Address"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout7" />
@@ -558,7 +538,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Permanent Address 🗺"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <TextView
@@ -573,7 +553,7 @@
                 android:text="Enter Student's Current Address"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/RegWinLinearLayout8" />
@@ -600,7 +580,7 @@
                     android:fontFamily="@font/sf_pro_display_regular"
                     android:hint="Current Address 🗺"
                     android:textAlignment="center"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>

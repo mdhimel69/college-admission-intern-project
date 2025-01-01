@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             handler.postDelayed(() -> {
                 MainActivity.this.finish();
                 System.exit(0);
-            },2000);  //value seconds //current value is 2sec
+            },1000);  //value seconds //current value is 2sec
 
             Toast.makeText(getApplicationContext(), "You choose Yes action",Toast.LENGTH_SHORT).show();
         });
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
             case R.id.mainScreenWalkthroughCard:
-                Intent j = new Intent(this, SplashScreen.class);
+                Intent j = new Intent(this, WalkWebView.class);
                 startActivity(j);
                 break;
         }
@@ -103,10 +103,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View decorView = getWindow().getDecorView();
         if (hasFocus) {
             decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                     | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                     | View.SYSTEM_UI_FLAG_FULLSCREEN);
         }
     }

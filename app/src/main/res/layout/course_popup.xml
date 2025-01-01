@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:background="@color/white"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -58,7 +59,7 @@
         android:text="Testing SubTitle 123\nTesting SubTitle 123\nTesting SubTitle 123\n\nTesting SubTitle 123\nTesting SubTitle 123"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coursePopupTextViewTitle" />
@@ -85,7 +86,7 @@
         android:layout_marginTop="14dp"
         android:backgroundTint="@color/colorOrange"
         android:fontFamily="@font/sf_pro_display_bold"
-        android:text="PDF FY SYLLABUS"
+        android:text="PDF SYLLABUS"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/white"
@@ -93,35 +94,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/coursePopupView1" />
 
-    <Button
-        android:id="@+id/coursePopupPDFBtn2"
-        android:layout_width="220dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/colorOrange"
-        android:fontFamily="@font/sf_pro_display_bold"
-        android:text="PDF SY SYLLABUS"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coursePopupPDFBtn1" />
-
-    <Button
-        android:id="@+id/coursePopupPDFBtn3"
-        android:layout_width="220dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/colorOrange"
-        android:fontFamily="@font/sf_pro_display_bold"
-        android:text="PDF TY SYLLABUS"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coursePopupPDFBtn2" />
 
     <View
         android:id="@+id/coursePopupView2"
@@ -135,7 +107,7 @@
         android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coursePopupPDFBtn3" />
+        app:layout_constraintTop_toBottomOf="@+id/RegWinCautionAnim" />
 
     <LinearLayout
         app:layout_constraintTop_toBottomOf="@+id/coursePopupView2"
@@ -182,13 +154,14 @@
         android:id="@+id/RegWinCautionAnim"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:lottie_rawRes="@raw/caution_anim"
-        app:lottie_autoPlay="false"
-        app:lottie_loop="true"
+        android:layout_marginTop="14dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/coursePopupPDFBtn3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/coursePopupPDFBtn1" />
+        app:layout_constraintTop_toBottomOf="@+id/coursePopupPDFBtn1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/caution_anim" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

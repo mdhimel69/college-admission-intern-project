@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@drawable/old_logo"
+        android:src="@drawable/sipi_logo"
         />
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="College of Computer Science\n&amp; Information Technology\n\nOnline Admission Management System\n\nThis App is made possible by the Android open source project and other open source software. Made with ❤ in COCSIT. Thanks for using this app.\n\nAre sure you want to exit ?"
+        android:text="SHYAMOLI IDEAL POLYTECHNIC\n INSTITUTE, DHAKA - 1207\nOnline Admission Management System\n\nThanks for using this app.\nAre sure you want to exit ?"
 
         />
 

@@ -1,6 +1,5 @@
 package in.org.cocsit.collegeadmissionmanagementsystem;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -15,8 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.daimajia.androidanimations.library.Techniques;
-import com.daimajia.androidanimations.library.YoYo;
 import com.orhanobut.dialogplus.DialogPlus;
 import com.orhanobut.dialogplus.ViewHolder;
 
@@ -41,32 +38,29 @@ public class Courses extends AppCompatActivity implements View.OnClickListener {
         coursesScreenBackButton.setOnClickListener(v -> onBackPressed());
 
         // following are the courses names cardViews
-        CardView cardViewBscCS = findViewById(R.id.courseRegBscCS);
-        CardView cardViewBscSE = findViewById(R.id.courseRegBscSE);
-        CardView cardViewBscNT = findViewById(R.id.courseRegBscNT);
-        CardView cardViewMscCS = findViewById(R.id.courseRegMscCS);
-        CardView cardViewMscSE = findViewById(R.id.courseRegMscSE);
-        CardView cardViewMscSA = findViewById(R.id.courseRegMscSA);
-        CardView cardViewMscCM = findViewById(R.id.courseRegMscCM);
-        CardView cardViewBCA = findViewById(R.id.courseRegBCA);
-        CardView cardViewBscBT = findViewById(R.id.courseRegBscBT);
-        CardView cardViewMscBT = findViewById(R.id.courseRegMscBT);
-        CardView cardViewBBA = findViewById(R.id.courseRegBBA);
-        CardView cardViewMBA = findViewById(R.id.courseRegMBA);
+        CardView courseComputer = findViewById(R.id.courseComputer);
+        CardView courseCivil = findViewById(R.id.courseCivil);
+        CardView courseMechanical = findViewById(R.id.courseMechanical);
+        CardView courseEEE = findViewById(R.id.courseEEE);
+        CardView courseElectrical = findViewById(R.id.courseElectrical);
+        CardView courseArchitecture = findViewById(R.id.courseArchitecture);
+        CardView courseTextile = findViewById(R.id.courseTextile);
+        CardView courseAutomobile = findViewById(R.id.courseAutomobile);
+        CardView courseMarine = findViewById(R.id.courseMarine);
+        CardView courseChemical = findViewById(R.id.courseChemical);
+
 
         // following are listeners to the above cardViews
-        cardViewBscCS.setOnClickListener(this);
-        cardViewBscSE.setOnClickListener(this);
-        cardViewBscNT.setOnClickListener(this);
-        cardViewMscCS.setOnClickListener(this);
-        cardViewMscSE.setOnClickListener(this);
-        cardViewMscSA.setOnClickListener(this);
-        cardViewMscCM.setOnClickListener(this);
-        cardViewBCA.setOnClickListener(this);
-        cardViewBscBT.setOnClickListener(this);
-        cardViewMscBT.setOnClickListener(this);
-        cardViewBBA.setOnClickListener(this);
-        cardViewMBA.setOnClickListener(this);
+        courseComputer.setOnClickListener(this);
+        courseCivil.setOnClickListener(this);
+        courseMechanical.setOnClickListener(this);
+        courseEEE.setOnClickListener(this);
+        courseElectrical.setOnClickListener(this);
+        courseArchitecture.setOnClickListener(this);
+        courseTextile.setOnClickListener(this);
+        courseAutomobile.setOnClickListener(this);
+        courseMarine.setOnClickListener(this);
+        courseChemical.setOnClickListener(this);
 
 
     }
@@ -76,53 +70,45 @@ public class Courses extends AppCompatActivity implements View.OnClickListener {
 
         switch (v.getId()){
 
-            case R.id.courseRegBscCS:
-                showCoursePopup(v,"B.Sc. Computer Science","Eligibility : 12th Science\nDuration : 3 Years\nSemesters : Total 6\nFees/Year : 17,900.0 Rs."
-                                 ,"cbcs_bsc_cs_fy.pdf","cbcs_bsc_cs_sy.pdf","cbcs_bsc_cs_ty.pdf");
+            case R.id.courseComputer:
+                showCoursePopup(v,"Computer Science and engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                                 ,"cbcs_bsc_cs_fy.pdf");
                 break;
-            case R.id.courseRegBscSE:
-                showCoursePopup(v,"B.Sc. Software Engineering","Eligibility : 12th Science\nDuration : 3 Years\nSemesters : Total 6\nFees/Year : 17,900.0 Rs."
-                                 ,"cbcs_bsc_se_fy.pdf","cbcs_bsc_se_sy.pdf","cbcs_bsc_se_ty.pdf");
+            case R.id.courseCivil:
+                showCoursePopup(v,"Civil engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                                 ,"cbcs_bsc_se_fy.pdf");
                 break;
-            case R.id.courseRegBscNT:
-                showCoursePopup(v,"B.Sc. Network Technology","Eligibility : 12th Science\nDuration : 3 Years\nSemesters : Total 6\nFees/Year : 17,900.0 Rs."
-                                 ,"cbcs_bsc_nt_fy.pdf","cbcs_bsc_nt_sy.pdf","cbcs_bsc_nt_ty.pdf");
+            case R.id.courseMechanical:
+                showCoursePopup(v,"Mechanical engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                                 ,"cbcs_bsc_nt_fy.pdf");
                 break;
-            case R.id.courseRegMscCS:
-                showCoursePopup(v,"M.Sc. Computer Science","Eligibility : Any Computer UG\nDuration : 2 Years\nSemesters : Total 4\nFees/Year : 29,900.0 Rs."
-                        ,"cbcs_msc_cs_fy.pdf","cbcs_msc_cs_sy.pdf","0");
+            case R.id.courseEEE:
+                showCoursePopup(v,"Electrical and Electronics Engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                        ,"cbcs_msc_cs_fy.pdf");
                 break;
-            case R.id.courseRegMscSE:
-                showCoursePopup(v,"M.Sc. Software Engineering","Eligibility : Any Computer UG\nDuration : 2 Years\nSemesters : Total 4\nFees/Year : 29,900.0 Rs."
-                        ,"cbcs_msc_se_fy.pdf","cbcs_msc_se_sy.pdf","0");
+            case R.id.courseElectrical:
+                showCoursePopup(v,"Electrical Engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                        ,"cbcs_msc_se_fy.pdf");
                 break;
-            case R.id.courseRegMscSA:
-                showCoursePopup(v,"M.Sc. System Admin. & N/W","Eligibility : Any UG\nDuration : 2 Years\nSemesters : Total 4\nFees/Year : 29,900.0 Rs."
-                        ,"cbcs_msc_sa_fy.pdf","cbcs_msc_sa_sy.pdf","0");
+            case R.id.courseArchitecture:
+                showCoursePopup(v,"Architecture Engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                        ,"cbcs_msc_sa_fy.pdf");
                 break;
-            case R.id.courseRegMscCM:
-                showCoursePopup(v,"M.Sc. Computer Management","Eligibility : Any UG\nDuration : 2 Years\nSemesters : Total 4\nFees/Year : 29,900.0 Rs."
-                        ,"cbcs_msc_cm_fy.pdf","cbcs_msc_cm_sy.pdf","0");
+            case R.id.courseTextile:
+                showCoursePopup(v,"Textile Engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                        ,"cbcs_msc_cm_fy.pdf");
                 break;
-            case R.id.courseRegBCA:
-                showCoursePopup(v,"BCA - Bachelor of\nComputer Application","Eligibility : Any 12th\nDuration : 3 Years\nSemesters : Total 6\nFees/Year : 17,900.0 Rs."
-                        ,"cbcs_bca_fy.pdf","cbcs_bca_sy.pdf","cbcs_bca_ty.pdf");
+            case R.id.courseAutomobile:
+                showCoursePopup(v,"Automobile Engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                        ,"cbcs_bca_fy.pdf");
                 break;
-            case R.id.courseRegBscBT:
-                showCoursePopup(v,"B.Sc. Biotechnology","Eligibility : 12th Science\nDuration : 3 Years\nSemesters : Total 6\nFees/Year : 17,900.0 Rs."
-                        ,"cbcs_bsc_bt_fy.pdf","cbcs_bsc_bt_sy.pdf","cbcs_bsc_bt_ty.pdf");
+            case R.id.courseMarine:
+                showCoursePopup(v,"Marine Engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                        ,"cbcs_bsc_bt_fy.pdf");
                 break;
-            case R.id.courseRegMscBT:
-                showCoursePopup(v,"M.Sc. Biotechnology","Eligibility : Any UG\nDuration : 2 Years\nSemesters : Total 4\nFees/Year : 29,900.0 Rs."
-                        ,"cbcs_msc_bt_fy.pdf","cbcs_msc_bt_sy.pdf","0");
-                break;
-            case R.id.courseRegBBA:
-                showCoursePopup(v,"BBA - Bachelor of\nBusiness Administration","Eligibility : Any 12th\nDuration : 3 Years\nSemesters : Total 6\nFees/Year : 17,900.0 Rs."
-                        ,"cbcs_bba_fy.pdf","cbcs_bba_sy.pdf","cbcs_bba_ty.pdf");
-                break;
-            case R.id.courseRegMBA:
-                showCoursePopup(v,"MBA - Master of\nBusiness Administration","Eligibility : Any UG\nDuration : 2 Years\nSemesters : Total 4\nFees/Year : 17,900.0 Rs."
-                        ,"0","0","0");
+            case R.id.courseChemical:
+                showCoursePopup(v,"Chemical Engineering","Eligibility : SSC\nDuration : 4 Years\nSemesters : Total 8\nFees/Year : 20,500.0 Tk."
+                        ,"cbcs_msc_bt_fy.pdf");
                 break;
         }
 
@@ -130,7 +116,7 @@ public class Courses extends AppCompatActivity implements View.OnClickListener {
     }
 
 
-    public void showCoursePopup(View view, String myCourseName, String myCourseDetails, String myFyPDF, String mySyPDF, String myTyPDF) {
+    public void showCoursePopup(View view, String myCourseName, String myCourseDetails, String myPDF) {
 
         final DialogPlus dialog = DialogPlus.newDialog(this)
                 .setGravity(Gravity.CENTER)
@@ -144,8 +130,6 @@ public class Courses extends AppCompatActivity implements View.OnClickListener {
         LottieAnimationView animationView = holderView.findViewById(R.id.RegWinCautionAnim);
 
         Button openPDFButton1 = holderView.findViewById(R.id.coursePopupPDFBtn1);
-        Button openPDFButton2 = holderView.findViewById(R.id.coursePopupPDFBtn2);
-        Button openPDFButton3 = holderView.findViewById(R.id.coursePopupPDFBtn3);
 
         Button registrationButton = holderView.findViewById(R.id.coursePopupRegBtn);
         Button cancelButton = holderView.findViewById(R.id.coursePopupCancelBtn);
@@ -158,38 +142,16 @@ public class Courses extends AppCompatActivity implements View.OnClickListener {
 
         openPDFButton1.setOnClickListener(v -> {
             Intent i = new Intent(this, PDFviewer.class);
-            i.putExtra("myPDFname",myFyPDF);
+            i.putExtra("myPDFname",myPDF);
             this.startActivity(i);
         });
 
-        openPDFButton2.setOnClickListener(v -> {
-            Intent i = new Intent(this, PDFviewer.class);
-            i.putExtra("myPDFname",mySyPDF);
-            this.startActivity(i);
-        });
 
-        openPDFButton3.setOnClickListener(v -> {
-            Intent i = new Intent(this, PDFviewer.class);
-            i.putExtra("myPDFname",myTyPDF);
-            this.startActivity(i);
-        });
-
-        if(myTyPDF.contentEquals("0")) {
-            openPDFButton3.setVisibility(View.INVISIBLE);
-            openPDFButton3.setClickable(false);
-            openPDFButton3.setEnabled(false);
-        }
-
-        if(mySyPDF.contentEquals("0")) {
-            openPDFButton2.setVisibility(View.INVISIBLE);
-            openPDFButton2.setClickable(false);
-            openPDFButton2.setEnabled(false);
-        }
-
-        if(myFyPDF.contentEquals("0")) {
+        if(myPDF.contentEquals("0")) {
             openPDFButton1.setVisibility(View.INVISIBLE);
             openPDFButton1.setClickable(false);
             openPDFButton1.setEnabled(false);
+            animationView.setVisibility(View.VISIBLE);
             animationView.playAnimation();
         }
 
